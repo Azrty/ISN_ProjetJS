@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice JS</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header>
+<div class="head">
+	<h1>Premier cours en JavaScript</h1>
+	<nav>
+		<ul>
+			<li id="acc">Accueil</li>
+			<li id="ex1">Exercice 1</li>
+			<li id="ex2">Exercice 2</li>
+			<li id="ex3">Exercice 3</li>
+			<li id="ex4">Exercice 4</li>
+			<li id="ex5">Exercice 5</li>
+			<li id="ex6">Exercice 6</li>
+			<li id="ex7">Exercice 7</li>
+			<li id="ex8">Exercice 8</li>
+		</ul>
+	</nav>
+</div>
+</header>
+
+<section class="content">
+
+	<div id="accueil" class="quest">
+		<h1 class="titre">Acceuil</h1>
+		<p class="para">Bienvenue ! Vous êtes surement ici pour votre premier cours en JS</p>
+		<p class="para">Lisez ce cours <a href='https://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript'>Openclassrooms</a> et peaufinez votre code par ici <a href='https://www.codecademy.com/fr/tracks/javascript'>Codecademy</a></p>
+		<p class="para">Revenez ensuite pour affronter l'épreuve de nos huits exercices !</p>
+		<p class="para">Bonne chance !</p>
+	</div>
+
+	<div id="exo1" class="quest">
+	<h2 class="titre">Exercice 1</h2>
+	<p class="para">Essayez de trouver la valeur que produit cette opération, puis exécutez-la en console pour voir si vous aviez raison</p>
+	<button id="ast1" class='btn'><i id="ico1" class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast1" class="astuce"><p>le console.log(); vous permet d'afficher des choses dans la console</p></div>
+	<br>
+	<button id="corec1" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec1" class="correction"><p>console.log(115*4-4+88/2); le résultats sera bien 500</p></div>
+	</div>
+
+	<div id="exo2" class="quest">
+	<h2 class="titre">Exercice 2</h2>
+	<p class="para">((4 >= 6) || ("herbe" != "verte")) &amp;&amp; !(((12*2) == 144) &amp;&amp; true)
+est-ce vrai(true) ? détailler votre réponse</p>
+	<button id="ast2" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast2" class="astuce"><p>prenez le temps de décomposer éléments par éléments</p></div>
+	<br>
+	<button id="corec2" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec2" class="correction"><p>(4 >= 6) est faux ensuite ("herbe" != "verte") est vraie (12*2) == 144) est faux et donc ((12*2) == 144) &amp;&amp; true) est faux.
+on regroupe ensuite !(((12*2) == 144) &amp;&amp; true) est donc vraie
+("herbe" != "verte")) &amp;&amp; !(((12*2) == 144) &amp;&amp; true) est vraie
+et ((4 >= 6) || ("herbe" != "verte")) est aussi vraie
+la réponse finale est donc Vrai(true) </p></div>
+	</div>
+
+	<div id="exo3" class="quest">
+	<h2 class="titre">Exercice 3</h2>
+	<p class="para">Donner pour chaqe variable , la valeur et le type de la donnée qu'elle référence :<br>
+
+a. var alert = "Au feu !";<br>
+b. var math1 = Math.max(2,4);<br>
+c. var math2 = Math.min(2,4) + 100;<br>
+d. var bool = confirm("Continuons-nous ?");<br>
+e. var message = prompt(Dites-nous tout ce que vous savez.","...");</p>
+	<button id="ast3" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast3" class="astuce"><p>le typeof vous permet de connaitre le type d'une variable</p></div>
+	<br>
+	<button id="corec3" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec3" class="correction"><p>a. valeur:Au feu ! type:String<br>
+b. valeur: 4 type:number<br>
+c. valeur:102 type:number<br>
+d. valeur: true ou false type:boolean<br>
+e. valeur: le message saisie type:object</p></div>
+	</div>
+
+	<div id="exo4" class="quest">
+	<h2 class="titre">Exercice 4</h2>
+	<p class="para">Utilisez la technique du while pour écrire un programme qui calcul et affiche la valeur de 2^10 (2 à la puissance 10). Vous n'êtes bien sûr pas autorisé à tricher en écrivant juste 2*2.....</p>
+	<button id="ast4" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast4" class="astuce"><p>syntax de la boucle while :
+while (/* Condition */)
+{
+    // Instructions à répéter
+}
+</p></div>
+	<br>
+	<button id="corec4" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec4" class="correction"><p>nub = 2;
+while (nub < Math.pow(2, 10))
+{
+    nub = nub*2;
+}</p></div>
+	</div>
+
+	<div id="exo5" class="quest">
+	<h2 class="titre">Exercice 5</h2>
+	<p class="para">Avec quelques petites modifications, la solution à l'exercice précédent peut être utilisée pour tracer un triangle. et quand je dis "tracer un triangle", je veux dire "afficher du texte qui ressemble presque à un triangle quand on louche".
+Affichez dix ligne. Sur la première, mettez un "#". sur la deuxième mettez-en-deux et ainsi de suite.</p>
+	<button id="ast5" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast5" class="astuce"><p>Comment avoir une chaine composée de x "#" ? une solution est de la construire avec une "boucle imbriquée" c'est à dire une boucle dans une boucle. Une méthode plus simple peut réutiliser la chaîne de la précédente itération,et d'y ajouter un caractère.</p></div>
+	<br>
+	<button id="corec5" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec5" class="correction"><p>
+var compt = 0;
+while (compt < 11)
+{
+	console.log("#".repeat(compt));
+	compt++;
+}
+</p>
+</div>
+	</div>
+
+	<div id="exo6" class="quest">
+	<h2 class="titre">Exercice 6</h2>
+	<p class="para">Réécriver les solutions des exercices précédents en utilisatant for à la place de while</p>
+	<button id="ast6" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast6" class="astuce"><p>syntax de la boucle for :<br>
+for (initialisation; condition; incrémentation) {<br>
+    instruction_1;<br>
+    instruction_2;<br>
+    instruction_3;<br>
+}</p></div>
+	<br>
+	<button id="corec6" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec6" class="correction"><p> 1/
+for(i=2; i &lsaquo; Math.pow(2, 10); i=i*2){ <br>
+}<br>
+console.log(i);<br>
+2/ for(i=0;i<11;i++){
+	console.log("#".repeat(i));
+}</p></div>
+	</div>
+
+	<div id="exo7" class="quest">
+	<h2 class="titre">Exercice 7</h2>
+	<p class="para">Ecrivez un programme qui vous demandera, en utilisant prompt, quelle est la valeur de 2+2. SI la réponse est "4", utilisez alert pour afficher un message sympa. Si c'est "3" ou "5" affichez "ça y était presque". dans les autres cas, n'hésitez pas à dire quelque chose de méchant</p>
+	<button id="ast7" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast7" class="astuce"><p>syntax du if, else if, else :<br>
+if (condition1){<br>
+   instruction1<br>
+}<br>
+else if (condition2){<br>
+   instruction2<br>
+}else{<br>
+   instructionn<br>
+   }<br>
+	</p></div>
+	<br>
+	<button id="corec7" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec7" class="correction"><p>
+var calcul = prompt("Quel est le résultat de 2+2 ?");<br>
+if(calcul == "4"){<br>
+	alert = "Bien joué vous êtes très fort";<br>
+}else if(calcul == "3" || calcul == "5"){<br>
+	alert = "ça y était presque";<br>
+}else{<br>
+	alert = "Vous êtes nul !";<br>
+}<br>
+</p></div>
+	</div>
+
+	<div id="exo8" class="quest">
+	<h2 class="titre">Exercice 8</h2>
+	<p class="para">Ajoutez un while, et optionnellement un break à votre solution du précédent exercice, afin que le programme continue à répéter la question jusqu'à ce qu'une réponse correcte soit donnée.</p>
+	<button id="ast8" class='btn'><i class="fa fa-question" aria-hidden="true"></i>Besoin d'une astuce ?</button>
+	<div id="divast8" class="astuce"><p>Notez que while(true)..... peut être utilisé pour créer une boucle qui ne s'arrête pas d'elle-même.C'est un peu ridicule, vous demandez au programme de boucler tant que true, mais c'est une astuce utile</p></div>
+	<br>
+	<button id="corec8" class='btn'><i class="fa fa-check" aria-hidden="true"></i>Correction</button>
+	<div id="divcorec8" class="correction"><p>var calcul;<br>
+while (true) {<br>
+  calcul = prompt("Quel est le résultat de 2+2 ?");<br>
+  if (calcul == "4") {<br>
+    alert("Bien joué vous êtes très fort");<br>
+    break;<br>
+  }<br>
+  else if (calcul == "3" || calcul == "5") {<br>
+    alert("ça y était presque");<br>
+  }<br>
+  else {<br>
+    alert("Vous êtes nul !");<br>
+  }<br>
+}<br>
+</p></div>
+	</div>
+
+
+</section>
+
+<!-- FOOTER -->
+	<footer>By François Deroubaix</footer>
+<!-- FOOTER END-->
+</body>
+</html>
